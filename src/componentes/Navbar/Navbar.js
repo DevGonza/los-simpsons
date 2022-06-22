@@ -8,14 +8,14 @@ export const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                <Link to="/los-simpsons"><img src={Simpsons} className="w-40" alt="logo" /></Link>
+                    <img src={Simpsons} className="w-40" alt="logo" />
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                            <Link to="/los-simpsons" className="nav-link active" aria-current="page">Inicio</Link>
+                                <Link to="/los-simpsons" className="nav-link active" aria-current="page">Inicio</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/blog" className="nav-link" >Blog</Link>
@@ -25,7 +25,7 @@ export const Navbar = () => {
                             </li>
                         </ul>
                         <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-warning text-danger" type="submit">Busqueda</button>
                         </form>
                     </div>
