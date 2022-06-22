@@ -1,19 +1,26 @@
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './componentes/Navbar/';
-import ImgMain from './componentes/ImgMain/';
-import Cards from './componentes/Cards/';
 import Footer from './componentes/Footer/';
-
+import Contacto from './pages/contacto/Contacto'
+import Error from './pages/error/Error';
+import Home from './pages/home/Home';
+import Blog from './pages/blog/Blog';
 
 function App() {
   return (
     
-    <>
+    <Router>
       <Navbar />
-      <ImgMain />
-      <Cards />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/*" element={<Error />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
+      
+    
   );
 }
 
